@@ -116,6 +116,7 @@ i {
     select {
         font-size: 15px;
         padding: 0px;
+        background-color: #fff;
     }
     .fa-copy {
         display: none;
