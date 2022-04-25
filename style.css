@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #4bcccc;
+}
+
+#translator-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+}
+
+#translator {
+    width: 50vw;
+    background-color: #fff;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 18px;
+}
+
+textarea {
+    width: 23vw;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    height: 40vh;
+    resize: none;
+    border-radius: 16px;
+    border-color: rgba(128, 128, 128, 0.547);
+    padding: 10px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.615);
+}
+
+textarea:focus {
+    border-color: rgba(128, 128, 128, 0.547);
+    outline: rgba(128, 128, 128, 0.547);
+}
+
+#tools {
+    margin-top: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.547);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 19px;
+    height: 40px;
+}
+
+select {
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+select:focus {
+    border: none;
+    outline: none;
+}
+
+#translate-btn {
+    background-color: #4bcccc;
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+}
+
+#translator ::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    height: 9px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+@media (max-width :500px) {
+    #translator {
+        width: 82vw;
+        padding: 10px;
+        border-radius: 9px;
+    }
+    textarea {
+        width: 78vw;
+        margin: 0px;
+        padding: 0px;
+        height: 190px;
+        border-radius: 8px;
+        padding-left: 9px;
+        padding-top: 10px;
+    }
+    select {
+        font-size: 15px;
+        padding: 0px;
+    }
+    .fa-copy {
+        display: none;
+    }
+    #tools {
+        padding: 0px;
+    }
+}
+
+@media (min-width :501px) and (max-width: 800px) {
+    #translator {
+        width: 80vw;
+    }
+    textarea {
+        width: 44%;
+    }
+}
+
+@media (min-width :801px) and (max-width: 1250px) {
+    #translator {
+        width: 50vw;
+    }
+    textarea {
+        width: 44%;
+    }
+}

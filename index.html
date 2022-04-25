@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator App</title>
+    <script src="https://kit.fontawesome.com/0b87f0ca63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="translator-wrapper">
+        <div id="translator">
+            <span id="translate-from-language-write">
+                <textarea name="translate-from" id="translate-from" spellcheck="false"></textarea>
+            </span>
+            <span id="translate-to">
+                <textarea name="translate-to-language-write" class="translate-to" spellcheck="false" disabled></textarea>
+            </span>
+            <div id="tools">
+                <i class="fas fa-copy" id="copy-from"></i>
+                <span id="select-language-translate-from">
+                    <select id="select-translate-from">
+                     </select>
+                    </span>
+                <span id="exchange-lanuage-icon">
+                    <i class="fa fa-exchange" aria-hidden="true"></i>
+                </span>
+                <i class="fas fa-copy" id="copy-to"></i>
+                <span id="select-language-translate-to">
+                    <select id="select-translate-to">
+                    </select>
+                </span>
+            </div>
+            <div id="translate-btn-wrapper">
+                <button id="translate-btn" name="translate Button">Translate</button>
+            </div>
+        </div>
+    </div>
+    <script src="countries.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
